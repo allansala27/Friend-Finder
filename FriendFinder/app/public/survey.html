@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper">
+        <div class="brand-logo center">
+            <i class="medium material-icons">mode_edit</i>
+                Survey
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+<!-- Survey Questions -->
+    <div class="col m6">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Questions</span>
+                <label>Select the most appropriate rating of yourself for each of the following questions.</label>
+                <br>
+                <p class="range-field">
+                I have the most fun when I am around people.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I get annoyed very easily.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I find it easy to understand others' emotions.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I am happy when others are happy.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I prefer to have a few close friends than know many people.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I get mad when people cannot follow directions.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I have the most fun when I am around people.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I have the most fun when I am around people.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I have the most fun when I am around people.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+                <p class="range-field">
+                I have the most fun when I am around people.
+                    <input type="range" id="test5" min="1" max="5" value="3" />
+                </p>
+            </div>
+        </div>
+    </div>
+
+<!-- About the user -->    
+    <div class="col m4">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">About You</span>
+                <input placeholder="Your Name" id="first_name" type="text" class="validate">
+                <input placeholder="URL of profile picture" id="first_name" type="text" class="validate">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- jQuery scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+<script type="text/javascript">
+var rangeSliderValueElement = document.getElementById('slider-range-value');
+
+rangeSlider.noUiSlider.on('update', function( values, handle ) {
+    rangeSliderValueElement.innerHTML = values[handle];
+});
+</script>
+</body>
+</html>
